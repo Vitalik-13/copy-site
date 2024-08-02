@@ -10,6 +10,7 @@ new Swiper(".myswiper1", {
     delay: 800,
     disableOnInteraction: true,
   },
+  speed: 300,
   breakpoints: {
     600: {
       spaceBetween: 30,

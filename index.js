@@ -9,7 +9,7 @@ new Swiper(".myswiper1", {
   },
   autoplay: {
     delay: 0, // Без затримки для безперервної прокрутки
-    disableOnInteraction: false, // Продовжувати автопрокрутку після взаємодії
+    disableOnInteraction: true, // Продовжувати автопрокрутку після взаємодії
   },
   speed: 1000, // Тривалість анімації у мілісекундах для плавного переходу
   breakpoints: {

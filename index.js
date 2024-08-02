@@ -7,7 +7,7 @@ new Swiper(".myswiper1", {
     clickable: true,
   },
   autoplay: {
-    delay: 300,
+    delay: 800,
     disableOnInteraction: true,
   },
   breakpoints: {

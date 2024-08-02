@@ -488,9 +488,6 @@ a {
     padding: 20px 20px;
     font-size: 20px;
   }
-  .fotо {
-    width: 120%;
-  }
 
   .main-title {
     font-size: 3rem;
@@ -604,10 +601,13 @@ a {
     padding-top: 200px;
   }
   .foto {
-    width: 50% !important;
+    width: 70% !important;
   }
   .top {
     padding-top: 50px;
+  }
+  .about-us-container {
+    margin-top: 0;
   }
 }
 @media (max-width: 450px) {

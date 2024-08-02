@@ -2,18 +2,24 @@ new Swiper(".myswiper1", {
   slidesPerView: 4,
   spaceBetween: 20,
   loop: true,
+  loopAdditionalSlides: 30, // Додаткові слайди для безшовної роботи
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
   autoplay: {
-    delay: 800,
-    disableOnInteraction: true,
+    delay: 0, // Без затримки для безперервної прокрутки
+    disableOnInteraction: false, // Продовжувати автопрокрутку після взаємодії
   },
-  speed: 300,
+  speed: 1000, // Тривалість анімації у мілісекундах для плавного переходу
   breakpoints: {
     600: {
       spaceBetween: 30,
+    },
+  },
+  on: {
+    autoplay: function () {
+      this.translateTo(this.translate - 1, 800, false, true);
     },
   },
 });

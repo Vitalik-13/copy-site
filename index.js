@@ -158,25 +158,19 @@ swiperWrapper.addEventListener("mousemove", (e) => {
   const rect = swiperWrapper.getBoundingClientRect();
   const x = e.clientX - rect.left;
 
-  // Show next button when mouse is in the right half of the swiper-wrapper
   if (x > rect.width * 0.5) {
     nextButton.classList.add("opacity");
     prevButton.classList.remove("opacity");
-  }
-  // Show prev button when mouse is in the left half of the swiper-wrapper
-  else if (x < rect.width * 0.5) {
+  } else if (x < rect.width * 0.5) {
     nextButton.classList.remove("opacity");
     prevButton.classList.add("opacity");
-  }
-  // Hide both buttons when mouse is in the center area
-  else {
+  } else {
     nextButton.classList.remove("opacity");
     prevButton.classList.remove("opacity");
   }
 });
 
 swiperWrapper.addEventListener("mouseleave", () => {
-  // Hide buttons only if not hovering over the buttons
   if (!nextButton.matches(":hover") && !prevButton.matches(":hover")) {
     nextButton.classList.remove("opacity");
     prevButton.classList.remove("opacity");

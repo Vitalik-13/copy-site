@@ -537,7 +537,7 @@ a {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-5000%);
+      transform: translateX(-800%);
     }
   }
 }
@@ -644,5 +644,31 @@ a {
 @media (max-width: 450px) {
   .about-us-main-paragraph {
     margin-bottom: -130px;
+  }
+  .animation {
+    animation: slide 50s linear infinite;
+    animation-play-state: running;
+  }
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-2000%);
+    }
+  }
+}
+@media (max-width: 360px) {
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-2000%);
+    }
+  }
+  .animation {
+    animation: slide 50s linear infinite;
+    animation-play-state: running;
   }
 }

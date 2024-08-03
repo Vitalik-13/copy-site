@@ -96,7 +96,7 @@ updateSwiperView();
 const cursor = document.querySelector(".kursor");
 const navMenu = document.querySelector(".nav-menu");
 const text = document.querySelector(".main-menu-conatiner");
-let foto = document.querySelectorAll(".foto-animation img");
+let foto = document.querySelectorAll(".foto");
 const buttonsContainer = document.querySelector(".buttons-container");
 const logo = document.querySelector(".logo");
 

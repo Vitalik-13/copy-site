@@ -14,20 +14,35 @@ new Swiper(".myswiper1", {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Отримання елементів
+  тів;
   let sliderWrapper1 = document.querySelector(".swiper-wrapper1");
-  let sliderButtons = document.querySelectorAll(".button2");
 
-  // Додавання класу animation при завантаженні сторінки
-  sliderWrapper1.classList.add("animation");
+  function handleAnimation() {
+    if (window.innerWidth < 800) {
+      // На екранах менше 800px
+      sliderWrapper1.classList.add("animation");
+      sliderWrapper1.addEventListener("click", () => {
+        if (sliderWrapper1.classList.contains("animation")) {
+          sliderWrapper1.classList.remove("animation");
+        } else {
+          sliderWrapper1.classList.add("animation");
+        }
+      });
+    } else {
+      sliderWrapper1.classList.add("animation");
+      sliderWrapper1.addEventListener("mousemove", () => {
+        sliderWrapper1.classList.remove("animation");
+      });
 
-  // Додавання обробника подій для кнопок
-  sliderWrapper1.addEventListener("mousemove", () => {
-    sliderWrapper1.classList.remove("animation");
-  });
-  sliderWrapper1.addEventListener("mouseout", () => {
-    sliderWrapper1.classList.add("animation");
-  });
+      sliderWrapper1.addEventListener("mouseout", () => {
+        sliderWrapper1.classList.add("animation");
+      });
+    }
+  }
+
+  handleAnimation();
+
+  window.addEventListener("resize", handleAnimation);
 });
 
 new Swiper(".myswiper2", {

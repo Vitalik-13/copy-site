@@ -616,6 +616,10 @@ a {
   .about-us-main-paragraph {
     margin-bottom: -60px;
   }
+  .animation {
+    animation: slide 15s linear infinite;
+    animation-play-state: running;
+  }
   .next {
     padding-top: 200px;
   }

@@ -2,7 +2,7 @@ new Swiper(".myswiper1", {
   slidesPerView: 4,
   spaceBetween: 20,
   loop: true,
-  loopAdditionalSlides: 50, // Додаткові слайди для безшовної роботи
+  // loopAdditionalSlides: 50, // Додаткові слайди для безшовної роботи
   pagination: {
     el: ".swiper-pagination",
     clickable: true,

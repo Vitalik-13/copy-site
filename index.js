@@ -15,7 +15,7 @@ new Swiper(".myswiper1", {
 
 document.addEventListener("DOMContentLoaded", () => {
   // Отримання елементів
-  let sliderWrapper1 = document.querySelector(".swiper-wrapper1");
+  let sliderWrapper1 = document.querySelector(".myswiper1");
 
   function initializeAnimation() {
     // Додавання класу animation при завантаженні сторінки

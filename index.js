@@ -14,35 +14,50 @@ new Swiper(".myswiper1", {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  тів;
+  // Отримання елементів
   let sliderWrapper1 = document.querySelector(".swiper-wrapper1");
 
-  function handleAnimation() {
+  function initializeAnimation() {
+    // Додавання класу animation при завантаженні сторінки
+    sliderWrapper1.classList.add("animation");
+
     if (window.innerWidth < 800) {
       // На екранах менше 800px
-      sliderWrapper1.classList.add("animation");
-      sliderWrapper1.addEventListener("click", () => {
-        if (sliderWrapper1.classList.contains("animation")) {
-          sliderWrapper1.classList.remove("animation");
-        } else {
-          sliderWrapper1.classList.add("animation");
-        }
-      });
+      sliderWrapper1.addEventListener("click", toggleAnimation);
     } else {
-      sliderWrapper1.classList.add("animation");
+      // На екранах більше або рівно 800px
       sliderWrapper1.addEventListener("mousemove", () => {
-        sliderWrapper1.classList.remove("animation");
+        sliderWrapper1.classList.remove("animation"); // Зупинка анімації при наведенні миші
       });
 
       sliderWrapper1.addEventListener("mouseout", () => {
-        sliderWrapper1.classList.add("animation");
+        sliderWrapper1.classList.add("animation"); // Відновлення анімації при виході миші
       });
     }
   }
 
-  handleAnimation();
+  function toggleAnimation() {
+    // Переключення класу animation при кліку
+    if (sliderWrapper1.classList.contains("animation")) {
+      sliderWrapper1.classList.remove("animation");
+    } else {
+      sliderWrapper1.classList.add("animation");
+    }
+  }
 
-  window.addEventListener("resize", handleAnimation);
+  // Ініціалізація анімації при завантаженні сторінки
+  initializeAnimation();
+
+  // Оновлення обробників подій при зміні розміру вікна
+  window.addEventListener("resize", () => {
+    // Видалення старих обробників подій
+    sliderWrapper1.removeEventListener("click", toggleAnimation);
+    sliderWrapper1.removeEventListener("mousemove", () => {});
+    sliderWrapper1.removeEventListener("mouseout", () => {});
+
+    // Ініціалізація анімації відповідно до нового розміру вікна
+    initializeAnimation();
+  });
 });
 
 new Swiper(".myswiper2", {

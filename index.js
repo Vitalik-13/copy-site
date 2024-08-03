@@ -1,24 +1,33 @@
+// Ініціалізація Swiper
 new Swiper(".myswiper1", {
   slidesPerView: 4,
   spaceBetween: 20,
   loop: true,
-  // loopAdditionalSlides: 50, // Додаткові слайди для безшовної роботи
   pagination: {
     el: ".swiper-pagination",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
     clickable: true,
   },
+});
 
-  autoplay: {
-    delay: 0, // Без затримки для безперервної прокрутки
-    disableOnInteraction: true, // Продовжувати автопрокрутку після взаємодії
-  },
-  speed: 600, // Тривалість анімації у мілісекундах
-  breakpoints: {
-    600: {
-      spaceBetween: 30,
-      speed: 700,
-    },
-  },
+document.addEventListener("DOMContentLoaded", () => {
+  // Отримання елементів
+  let sliderWrapper1 = document.querySelector(".swiper-wrapper1");
+  let sliderButtons = document.querySelectorAll(".button2");
+
+  // Додавання класу animation при завантаженні сторінки
+  sliderWrapper1.classList.add("animation");
+
+  // Додавання обробника подій для кнопок
+  sliderWrapper1.addEventListener("mousemove", () => {
+    sliderWrapper1.classList.remove("animation");
+  });
+  sliderWrapper1.addEventListener("mouseout", () => {
+    sliderWrapper1.classList.add("animation");
+  });
 });
 
 new Swiper(".myswiper2", {
@@ -112,8 +121,8 @@ document.addEventListener("scroll", () => {
 });
 
 const swiperWrapper = document.querySelector(".slider-wrapper");
-const nextButton = document.querySelector(".swiper-button-next");
-const prevButton = document.querySelector(".swiper-button-prev");
+const nextButton = document.querySelector(".new-button");
+const prevButton = document.querySelector(".new-button-next");
 
 swiperWrapper.addEventListener("mousemove", (e) => {
   const rect = swiperWrapper.getBoundingClientRect();

@@ -7,19 +7,16 @@ new Swiper(".myswiper1", {
     el: ".swiper-pagination",
     clickable: true,
   },
+
   autoplay: {
     delay: 0, // Без затримки для безперервної прокрутки
     disableOnInteraction: true, // Продовжувати автопрокрутку після взаємодії
   },
-  speed: 1000, // Тривалість анімації у мілісекундах для плавного переходу
+  speed: 300, // Тривалість анімації у мілісекундах
   breakpoints: {
     600: {
       spaceBetween: 30,
-    },
-  },
-  on: {
-    autoplay: function () {
-      this.translateTo(this.translate - 1, 800, false, true);
+      speed: 700,
     },
   },
 });

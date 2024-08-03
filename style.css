@@ -210,7 +210,18 @@ a {
   margin-left: 0 !important;
   margin: 150px 0;
   height: 450px;
+  transition: all 5s ease;
+  /* animation: slide 50s linear infinite;
+  animation-play-state: running; */
 }
+/* @keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+} */
 
 .foto {
   width: 28% !important;

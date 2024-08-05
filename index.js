@@ -13,8 +13,13 @@ new Swiper(".myswiper1", {
   },
 });
 
+// JavaScript
 document.addEventListener("DOMContentLoaded", () => {
   let sliderWrapper1 = document.querySelector(".myswiper1");
+
+  function toggleAnimation() {
+    sliderWrapper1.classList.toggle("stop-animation");
+  }
 
   function initializeAnimation() {
     sliderWrapper1.classList.add("animation");
@@ -32,20 +37,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  function toggleAnimation() {
-    if (sliderWrapper1.classList.contains("animation")) {
-      sliderWrapper1.classList.add("stop-animation");
-    } else {
-      sliderWrapper1.classList.remove("stop-animation");
-    }
-  }
-
   initializeAnimation();
 
+  // Listen for window resize to reinitialize the events
   window.addEventListener("resize", () => {
+    // Remove previous event listeners to avoid duplicates
     sliderWrapper1.removeEventListener("click", toggleAnimation);
-    sliderWrapper1.removeEventListener("mousemove", () => {});
-    sliderWrapper1.removeEventListener("mouseout", () => {});
+    sliderWrapper1.removeEventListener("mousemove", () => {
+      sliderWrapper1.classList.add("stop-animation");
+    });
+    sliderWrapper1.removeEventListener("mouseout", () => {
+      sliderWrapper1.classList.remove("stop-animation");
+    });
 
     initializeAnimation();
   });

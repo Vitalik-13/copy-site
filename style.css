@@ -225,7 +225,9 @@ a {
     transform: translateX(-200%);
   }
 }
-
+.stop-animation {
+  animation-play-state: paused;
+}
 .foto {
   width: 28% !important;
   height: 100%;

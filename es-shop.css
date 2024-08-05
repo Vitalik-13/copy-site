@@ -25,23 +25,17 @@ a {
   top: 40px;
   left: 0;
   height: 2px;
-  background-color: blue;
+  background-color: #f96161;
   z-index: 1;
   width: 0;
   transition: all 0.5s ease;
 }
 .link-main-menu:hover {
-  color: blue;
+  color: #f96161;
 }
 
 .link-main-menu:hover:before {
   width: 100%;
-}
-.moodstories {
-  color: #81695d;
-  font-weight: 700;
-  font-size: 32px;
-  text-transform: uppercase;
 }
 
 .body {
@@ -51,18 +45,29 @@ a {
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: white !important;
 }
 .menu {
   display: flex;
   flex-direction: column;
   gap: 40px 0;
-  padding: 80px 0 100px 200px;
+  padding: 100px 100px 0px;
 }
-.menu span {
-  display: block;
-  margin: -20px 0;
+.closest {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20%;
+}
+.closest a {
+  padding: 10px 40px;
+  border-radius: 30px;
+  background-color: #f96161;
+  color: white;
+  transition: all 0.5s ease-in;
+  font-size: 30px;
   transition: all 0.5s ease;
+}
+.closest a:hover {
+  opacity: 0.5;
 }
 .menu span:hover {
   color: blue;

@@ -40,8 +40,10 @@ a {
 .moodstories {
   color: #81695d;
   font-weight: 700;
+  font-size: 32px;
   text-transform: uppercase;
 }
+
 .body {
   font-family: Optima;
   overflow: hidden;

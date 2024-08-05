@@ -634,6 +634,10 @@ a {
   .about-us-container {
     margin-top: 0;
   }
+  .hidden {
+    overflow: hidden;
+    margin-top: -50px;
+  }
 }
 @media (max-width: 450px) {
   .about-us-main-paragraph {

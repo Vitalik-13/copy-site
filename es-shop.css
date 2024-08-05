@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Optima";
+  src: url("./fonts/OptimaLTPro-Roman.woff2") format("woff2");
+  src: url("./fonts/OptimaLTPro-Roman.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.link-main-menu {
+  position: relative;
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 5px;
+  transition: all 0.5s ease;
+}
+.link-main-menu::before {
+  position: absolute;
+  content: "";
+  top: 40px;
+  left: 0;
+  height: 2px;
+  background-color: blue;
+  z-index: 1;
+  width: 0;
+  transition: all 0.5s ease;
+}
+.link-main-menu:hover {
+  color: blue;
+}
+
+.link-main-menu:hover:before {
+  width: 100%;
+}
+.moodstories {
+  color: #81695d;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.body {
+  font-family: Optima;
+  overflow: hidden;
+  cursor: none;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white !important;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px 0;
+  padding: 80px 0 100px 200px;
+}
+.menu span {
+  display: block;
+  margin: -20px 0;
+  transition: all 0.5s ease;
+}
+.menu span:hover {
+  color: blue;
+}
+@media (max-width: 650px) {
+  .menu {
+    padding-left: 50px;
+  }
+}

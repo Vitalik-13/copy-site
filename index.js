@@ -13,7 +13,6 @@ new Swiper(".myswiper1", {
   },
 });
 
-// JavaScript
 document.addEventListener("DOMContentLoaded", () => {
   let sliderWrapper1 = document.querySelector(".myswiper1");
 
@@ -39,9 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   initializeAnimation();
 
-  // Listen for window resize to reinitialize the events
   window.addEventListener("resize", () => {
-    // Remove previous event listeners to avoid duplicates
     sliderWrapper1.removeEventListener("click", toggleAnimation);
     sliderWrapper1.removeEventListener("mousemove", () => {
       sliderWrapper1.classList.add("stop-animation");

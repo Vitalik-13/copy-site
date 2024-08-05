@@ -214,7 +214,7 @@ a {
   transition: all 5s ease;
 }
 .stop-animation {
-  animation-play-state: paused;
+  animation-play-state: paused !important;
 }
 .animation {
   animation: slide 30s linear infinite;

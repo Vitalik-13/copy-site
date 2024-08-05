@@ -90,9 +90,29 @@ const text = document.querySelector(".main-menu-conatiner");
 let foto = document.querySelectorAll(".foto");
 const buttonsContainer = document.querySelector(".buttons-container");
 const logo = document.querySelector(".logo");
+let firstLinkMenu = document.querySelector(".first");
+let menu = document.querySelector(".menu");
+let closest = document.querySelector(".button-closest");
 
+firstLinkMenu.addEventListener("click", () => {
+  menu.classList.toggle("transform-tranleteY");
+  body.classList.toggle("scrool-none");
+  firstLinkMenu.classList.toggle("color");
+});
+closest.addEventListener("click", () => {
+  menu.classList.toggle("transform-tranleteY");
+  body.classList.toggle("scrool-none");
+  firstLinkMenu.classList.toggle("color");
+});
 document.addEventListener("mousemove", (e) => {
   cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+});
+closest.addEventListener("mouseover", () => {
+  cursor.classList.add("zoomed");
+});
+
+closest.addEventListener("mouseout", () => {
+  cursor.classList.remove("zoomed");
 });
 
 navMenu.addEventListener("mouseover", () => {

@@ -88,4 +88,13 @@ body.addEventListener("click", (e) => {
 navigationMenu.addEventListener("click", (e) => {
   e.stopPropagation();
 });
+
+let firstLinkMenu = document.querySelector(".first");
+let menu = document.querySelector(".menu");
+firstLinkMenu.addEventListener("click", () => {
+  menu.classList.toggle("transform-tranleteY");
+  body.classList.toggle("scrool-none");
+  firstLinkMenu.classList.toggle("color");
+});
+
 AOS.init();

@@ -1053,7 +1053,12 @@ label {
   }
   .text {
     gap: 25px;
-    line-height: 10px;
+  }
+  .link-paragraph {
+    line-height: 15px;
+  }
+  .link-form {
+    margin-top: 5px;
   }
   .text-area {
     margin-top: 15px;

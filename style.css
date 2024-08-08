@@ -662,7 +662,7 @@ label {
 
 .input:focus ~ label,
 .input:valid ~ label {
-  top: -20px;
+  top: -10px;
   font-size: 14px;
   color: #615f5f;
 }
@@ -1022,6 +1022,10 @@ label {
   .about-us-main-paragraph {
     margin-bottom: -100px;
   }
+  .input:focus ~ label,
+  .input:valid ~ label {
+    top: 0px;
+  }
   .form-close {
     right: 1%;
     top: 1%;
@@ -1049,7 +1053,7 @@ label {
     gap: 25px;
   }
   .text-area {
-    margin-top: 20px;
+    margin-top: 15px;
   }
   .form-title {
     margin-bottom: 15px;
@@ -1059,7 +1063,7 @@ label {
     margin-bottom: 25px;
   }
   .textarea-lable {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
   .next {
     padding-top: 300px;

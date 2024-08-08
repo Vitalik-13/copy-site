@@ -467,6 +467,7 @@ a {
   transition: all 0.5s ease-in;
   font-size: 30px;
   transition: all 0.5s ease;
+  border: none;
 }
 .button-closest:hover {
   opacity: 0.5;
@@ -713,6 +714,11 @@ a {
   }
   .closest {
     right: 10%;
+  }
+  .button-closest {
+    padding: 10px 30px;
+    font-size: 28px;
+    border: none;
   }
 }
 @media (max-width: 450px) {

@@ -986,8 +986,9 @@ label {
     margin-top: 70%;
   }
   .static-text {
-    margin-bottom: 18%;
+    margin-bottom: -3%;
   }
+
   .about-us-main-paragraph {
     margin-bottom: -60px;
   }
@@ -1046,7 +1047,11 @@ label {
     margin-top: 20px;
   }
   .form-title {
+    margin-bottom: 15px;
     font-size: 3rem;
+  }
+  .form-paragraph {
+    margin-bottom: 25px;
   }
   .textarea-lable {
     font-size: 14px !important;

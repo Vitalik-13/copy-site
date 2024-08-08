@@ -1053,6 +1053,7 @@ label {
   }
   .text {
     gap: 25px;
+    line-height: 10px;
   }
   .text-area {
     margin-top: 15px;

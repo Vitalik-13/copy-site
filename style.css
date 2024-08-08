@@ -133,24 +133,27 @@ a {
 /* header========================================================================================= finish */
 /* menu============================================================================================ start */
 .main-menu-conatiner {
-  margin-top: 100px;
+  margin-top: 120px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* gap: 30px 0; */
   color: black;
   background-color: #fbefdf;
   position: relative;
   overflow: hidden;
-  z-index: 3;
   width: 100%;
-  z-index: 3;
   text-align: center;
 }
-/* .desinisng {
-  margin-bottom: 150px;
-} */
+
+.static-text {
+  font-size: 8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 190px; /* Відступ між статичним і анімованими текстами */
+}
+
 .main-menu-conatiner span {
   font-size: 12px;
   text-transform: uppercase;
@@ -178,22 +181,22 @@ a {
 @keyframes slide-one {
   0%,
   25% {
-    top: 150%; /* Початкова позиція (внизу) */
+    top: 150%;
     opacity: 0;
   }
   33%,
   50% {
-    top: 40%; /* Центральна позиція */
+    top: calc(40% + 50px); /* Враховуємо відступ з .static-text */
     opacity: 1;
   }
   58%,
   75% {
-    top: -100%; /* Кінцева позиція (вгорі) */
+    top: -100%;
     opacity: 0;
   }
   76%,
   100% {
-    top: 150%; /* Повертається до початкової позиції */
+    top: 150%;
   }
 }
 
@@ -201,23 +204,23 @@ a {
 @keyframes slide-two {
   0%,
   40% {
-    top: 150%; /* Початкова позиція (внизу) */
+    top: 150%;
     opacity: 0;
   }
   50%,
   70% {
-    top: 50%; /* Центральна позиція */
+    top: calc(50% + 50px); /* Враховуємо відступ з .static-text */
     opacity: 1;
   }
   80%,
   100% {
-    top: -100%; /* Кінцева позиція (вгорі) */
+    top: -100%;
     opacity: 0;
   }
 }
 
 .main-paragraph {
-  margin-top: 300px;
+  margin-top: 33%;
   font-size: 2rem;
 }
 
@@ -594,7 +597,7 @@ a {
 .text {
   display: flex;
   flex-direction: column;
-  gap: 100px 0;
+  gap: 80px 0;
 }
 .paragrahp-link {
   color: #615f5f;
@@ -622,7 +625,7 @@ a {
 }
 .group {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .input {
@@ -726,7 +729,7 @@ label {
   margin-top: -8px;
 }
 .big-margin {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 @keyframes inputHighlighter {
   from {
@@ -976,6 +979,15 @@ label {
   }
 }
 @media (max-width: 600px) {
+  .main-menu-conatiner {
+    margin-top: 22%;
+  }
+  .main-paragraph {
+    margin-top: 70%;
+  }
+  .static-text {
+    margin-bottom: 16%;
+  }
   .about-us-main-paragraph {
     margin-bottom: -60px;
   }

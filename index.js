@@ -93,6 +93,13 @@ const logo = document.querySelector(".logo");
 let firstLinkMenu = document.querySelector(".first");
 let menu = document.querySelector(".menu");
 let closest = document.querySelector(".button-closest");
+let listMenu = document.querySelectorAll(".list-menu");
+listMenu.forEach((list) => {
+  list.addEventListener("click", () => {
+    navMenu.classList.remove("class-transform");
+    body.classList.remove("blur-effect");
+  });
+});
 
 firstLinkMenu.addEventListener("click", () => {
   menu.classList.toggle("transform-tranleteY");
@@ -208,7 +215,6 @@ prevButton.addEventListener("mouseleave", () => {
 
 let body = document.querySelector(".body");
 let content = document.querySelector(".content");
-
 let burger = document.querySelector(".burger-menu");
 let navigationMenu = document.querySelector(".nav-menu");
 let closeMenu = document.querySelector(".close");

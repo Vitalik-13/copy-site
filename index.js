@@ -281,4 +281,17 @@ navigationMenu.addEventListener("click", (e) => {
   e.stopPropagation();
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  // Затримка у 4 секунди (4000 мілісекунд)
+  setTimeout(() => {
+    // Отримання елементів
+    let one = document.querySelector(".btn-text-one");
+    let two = document.querySelector(".btn-text-two");
+
+    // Додавання класу, який забезпечить opacity: 1
+    if (one) one.classList.add("visible");
+    if (two) two.classList.add("visible");
+  }, 4000);
+});
+
 AOS.init();

@@ -94,6 +94,18 @@ let firstLinkMenu = document.querySelector(".first");
 let menu = document.querySelector(".menu");
 let closest = document.querySelector(".button-closest");
 let listMenu = document.querySelectorAll(".list-menu");
+let contact = document.querySelector(".blue");
+let formContainer = document.querySelector(".form-container");
+let formClose = document.querySelector(".form-close");
+let inputGroup = document.querySelectorAll(".group");
+let send = document.querySelector(".fom-button");
+
+contact.addEventListener("click", () => {
+  formContainer.classList.add("display-blosk");
+});
+formClose.addEventListener("click", () => {
+  formContainer.classList.remove("display-blosk");
+});
 listMenu.forEach((list) => {
   list.addEventListener("click", () => {
     navMenu.classList.remove("class-transform");
@@ -103,12 +115,12 @@ listMenu.forEach((list) => {
 
 firstLinkMenu.addEventListener("click", () => {
   menu.classList.toggle("transform-tranleteY");
-  body.classList.toggle("scroll");
+  body.classList.toggle("scrool-none");
   firstLinkMenu.classList.toggle("color");
 });
 closest.addEventListener("click", () => {
   menu.classList.toggle("transform-tranleteY");
-  body.classList.toggle("scroll");
+  body.classList.toggle("scrool-none");
   firstLinkMenu.classList.toggle("color");
 });
 document.addEventListener("mousemove", (e) => {
@@ -127,6 +139,20 @@ navMenu.addEventListener("mouseover", () => {
 });
 
 navMenu.addEventListener("mouseout", () => {
+  cursor.classList.remove("zoomed");
+});
+formClose.addEventListener("mouseover", () => {
+  cursor.classList.add("zoomed");
+});
+
+formClose.addEventListener("mouseout", () => {
+  cursor.classList.remove("zoomed");
+});
+send.addEventListener("mouseover", () => {
+  cursor.classList.add("zoomed");
+});
+
+send.addEventListener("mouseout", () => {
   cursor.classList.remove("zoomed");
 });
 
@@ -152,6 +178,16 @@ foto.forEach((item) =>
   })
 );
 foto.forEach((item) =>
+  item.addEventListener("mouseout", () => {
+    cursor.classList.remove("zoomed");
+  })
+);
+inputGroup.forEach((item) =>
+  item.addEventListener("mouseover", () => {
+    cursor.classList.add("zoomed");
+  })
+);
+inputGroup.forEach((item) =>
   item.addEventListener("mouseout", () => {
     cursor.classList.remove("zoomed");
   })

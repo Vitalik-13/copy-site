@@ -570,7 +570,7 @@ a {
   display: none;
 }
 .display-blosk {
-  display: block;
+  display: flex;
 }
 .form-wrapper {
   background-color: #fbefdf;

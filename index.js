@@ -103,12 +103,12 @@ listMenu.forEach((list) => {
 
 firstLinkMenu.addEventListener("click", () => {
   menu.classList.toggle("transform-tranleteY");
-  body.classList.toggle("scrool-none");
+  body.classList.toggle("scroll");
   firstLinkMenu.classList.toggle("color");
 });
 closest.addEventListener("click", () => {
   menu.classList.toggle("transform-tranleteY");
-  body.classList.toggle("scrool-none");
+  body.classList.toggle("scroll");
   firstLinkMenu.classList.toggle("color");
 });
 document.addEventListener("mousemove", (e) => {

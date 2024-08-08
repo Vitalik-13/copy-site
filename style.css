@@ -907,6 +907,8 @@ label {
   }
   .about-us-foto {
     width: 90%;
+    order: 2;
+    display: flex;
   }
   .about-us-text {
     display: flex;
@@ -917,11 +919,6 @@ label {
   .about-us-main-title {
     display: flex;
     order: 1;
-  }
-
-  .about-us-foto {
-    order: 2;
-    display: flex;
   }
 
   .about-us-main-paragraph {
@@ -993,7 +990,9 @@ label {
   .static-text {
     margin-bottom: 10%;
   }
-
+  .about-us-foto {
+    margin-bottom: 50px;
+  }
   .about-us-main-paragraph {
     margin-bottom: -60px;
   }
@@ -1026,6 +1025,9 @@ label {
   .input:valid ~ label {
     top: 0px;
   }
+  .next-lable {
+    margin-top: -15px !important;
+  }
   .form-close {
     right: 1%;
     top: 1%;
@@ -1041,7 +1043,7 @@ label {
     font-size: 12px;
   }
   .forma-and-text {
-    gap: 30px 0;
+    gap: 10px 0;
   }
   .group {
     margin-bottom: 20px;

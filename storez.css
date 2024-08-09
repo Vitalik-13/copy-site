@@ -142,3 +142,26 @@
     font-size: 28px;
   }
 }
+@media (max-width: 450px) {
+  .text-block-container {
+    padding: 15px;
+  }
+  .how-to-find-us-title {
+    font-size: 18px;
+  }
+  .button-apsolute {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+  .open-hours-title,
+  .how-to-find-us-title,
+  .day-time-block {
+    margin-bottom: 20px;
+  }
+  .day {
+    margin-bottom: 15px;
+  }
+  .time-block time {
+    margin-bottom: 15px;
+  }
+}

@@ -131,7 +131,7 @@
 }
 @media (max-width: 600px) {
   .foto-models-wrapper {
-    flex: 0 0 70%;
+    flex: 0 0 75%;
   }
   .foto-models-container {
     padding: 0;
@@ -150,14 +150,17 @@
     font-size: 28px;
   }
   .text-block-container {
-    padding: 15px;
+    padding: 10px;
   }
   .how-to-find-us-title {
     font-size: 18px;
   }
   .button-apsolute {
+    display: block;
     font-size: 20px;
     padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
   }
   .open-hours-title,
   .how-to-find-us-title,
@@ -167,10 +170,10 @@
   }
 
   .day {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .time-block time {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
   .how-to-find-us-title {
     font-size: 16px;

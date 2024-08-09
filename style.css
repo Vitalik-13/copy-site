@@ -522,7 +522,7 @@ a {
   flex-direction: column;
 
   background-color: #fbefdf;
-  z-index: 5;
+  z-index: 0;
   overflow: hidden;
   transition: all 0.7s ease;
   /* transform: translateY(-150%); */
@@ -531,6 +531,7 @@ a {
 .transform-tranleteY {
   /* transform: translateY(0); */
   opacity: 1;
+  z-index: 5;
 }
 .menu li {
   margin-bottom: 42px;

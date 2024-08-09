@@ -520,16 +520,23 @@ a {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px 0;
-  padding: 40px 480px 0px;
+
   background-color: #fbefdf;
   z-index: 5;
   overflow: hidden;
-  transition: all 0.3s ease;
-  transform: translateY(-150%);
+  transition: all 0.7s ease;
+  /* transform: translateY(-150%); */
+  opacity: 0;
 }
 .transform-tranleteY {
-  transform: translateY(0);
+  /* transform: translateY(0); */
+  opacity: 1;
+}
+.menu li {
+  margin-bottom: 42px;
+}
+.wrap-menu {
+  padding: 40px 380px 40px 0;
 }
 .color {
   color: #f96161;

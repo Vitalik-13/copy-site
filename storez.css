@@ -131,10 +131,13 @@
 }
 @media (max-width: 600px) {
   .foto-models-wrapper {
-    flex: 0 0 100%;
+    flex: 0 0 70%;
   }
   .foto-models-container {
-    padding: 0 15px;
+    padding: 0;
+  }
+  .foto-models-container {
+    justify-content: center;
   }
 }
 @media (max-width: 550px) {
@@ -146,8 +149,6 @@
   .button-apsolute {
     font-size: 28px;
   }
-}
-@media (max-width: 450px) {
   .text-block-container {
     padding: 15px;
   }
@@ -161,12 +162,17 @@
   .open-hours-title,
   .how-to-find-us-title,
   .day-time-block {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
+    font-size: 20px;
   }
+
   .day {
     margin-bottom: 15px;
   }
   .time-block time {
     margin-bottom: 15px;
+  }
+  .how-to-find-us-title {
+    font-size: 16px;
   }
 }

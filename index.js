@@ -259,21 +259,19 @@ burger.addEventListener("click", (e) => {
   e.stopPropagation();
   navigationMenu.classList.add("class-transform");
   body.classList.add("scrool-none");
-  content.classList.add("blur-effect");
+  menu.classList.remove("transform-tranleteY");
 });
 
 closeMenu.addEventListener("click", (e) => {
   e.stopPropagation();
   navigationMenu.classList.remove("class-transform");
   body.classList.remove("scrool-none");
-  content.classList.remove("blur-effect");
 });
 
 body.addEventListener("click", (e) => {
   if (!e.target.closest(".nav-menu") && !e.target.closest(".burger-menu")) {
     navigationMenu.classList.remove("class-transform");
     body.classList.remove("scrool-none");
-    content.classList.remove("blur-effect");
   }
 });
 

@@ -162,14 +162,4 @@ titleSpanContainers.forEach((itemTitle) => {
       textBlockContainer.classList.remove("show-opacity");
     });
   }
-
-  if (buttonSpan) {
-    itemTitle.addEventListener("mouseover", () => {
-      buttonSpan.classList.add("transform");
-    });
-
-    itemTitle.addEventListener("mouseout", () => {
-      buttonSpan.classList.remove("transform");
-    });
-  }
 });

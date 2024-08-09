@@ -28,7 +28,7 @@ a {
   width: 100%;
 }
 .blur-effect {
-  filter: blur(7px);
+  /* filter: blur(7px); */
   pointer-events: none;
 }
 .close {

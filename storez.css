@@ -1,0 +1,144 @@
+@font-face {
+  font-family: "Optima";
+  src: url("./fonts/OptimaLTPro-Roman.woff2") format("woff2");
+  src: url("./fonts/OptimaLTPro-Roman.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.foto-models-container {
+  margin: 150px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px 1%;
+  position: relative;
+  z-index: 3;
+  padding-left: 35px;
+}
+.foto-models-wrapper {
+  flex: 0 0 32%;
+}
+.foto-models-wrapper img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.foto-models-title {
+  margin-top: 25px;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: italic;
+}
+.button-span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  background-color: #9e4743;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.title-span-container {
+  display: flex;
+  align-items: end;
+  gap: 0 30px;
+  transition: all 0.5s ease;
+}
+.foto-block {
+  position: relative;
+}
+.text-block-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #9e4743;
+  z-index: 1;
+  border-radius: 10px;
+  padding: 50px 30px;
+  color: white;
+  opacity: 0;
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.day-time-block {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+.open-hours-title {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.day-block {
+  text-align: center;
+}
+.day {
+  margin-bottom: 20px;
+}
+.time-block time {
+  display: block;
+  margin-bottom: 20px;
+}
+.how-to-find-us-title {
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 50px;
+}
+.button-apsolute {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 25px 0;
+  width: 100%;
+  color: white;
+  font-size: 32px;
+  border-radius: 20px;
+  cursor: none;
+}
+.foto-models-wrapper:hover .text-block-container {
+  opacity: 1;
+}
+.show-opacity {
+  opacity: 1;
+}
+.transform {
+  transform: rotate(45deg);
+}
+@media (max-width: 900px) {
+  .foto-models-wrapper {
+    flex: 0 0 48%;
+  }
+}
+@media (max-width: 600px) {
+  .foto-models-wrapper {
+    flex: 0 0 100%;
+  }
+  .foto-models-container {
+    padding: 0 15px;
+  }
+}
+@media (max-width: 550px) {
+  .open-hours-title,
+  .how-to-find-us-title,
+  .day-time-block {
+    margin-bottom: 30px;
+  }
+  .button-apsolute {
+    font-size: 28px;
+  }
+}

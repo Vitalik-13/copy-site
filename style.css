@@ -773,7 +773,7 @@ label {
   .nav-menu {
     flex-direction: column;
     gap: 50px 0;
-    background-color: white;
+    background-color: #fbefdf;
     position: absolute;
     top: 0;
     left: 0;

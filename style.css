@@ -375,11 +375,11 @@ a {
 }
 .new-button {
   right: 5% !important;
-  background-image: url(./images/icons8-СЃС‚СЂРµР»РєР°-РІРїСЂР°РІРѕ-50.png);
+  background-image: url(./images/стрелка-вправо.png);
 }
 .new-button-next {
   left: 5% !important;
-  background-image: url(./images/icons8-СЃС‚СЂРµР»РєР°-РІРїСЂР°РІРѕ-50\ 1.png);
+  background-image: url(./images/стрелка-влево.png);
 }
 .opacity {
   opacity: 1;

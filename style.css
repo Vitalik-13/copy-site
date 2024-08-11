@@ -4,7 +4,8 @@
   src: url("./fonts/OptimaLTPro-Roman.woff2") format("woff2");
   src: url("./fonts/OptimaLTPro-Roman.woff") format("woff");
 }
-/* шрифт====================================================================== */
+/* шрифт====================================================================== 
+в папці fonts цей шрифт є*/
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +19,7 @@ a {
   cursor: none;
 }
 .body {
-  font-family: Optaima; /* шрифт ==================================================*/
+  font-family: Optima; /* шрифт ==================================================*/
   overflow-x: hidden;
   cursor: none;
   position: relative;

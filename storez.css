@@ -73,27 +73,17 @@
   align-items: center;
   justify-content: center;
 }
-/* .day-time-block {
+.wrapp {
   display: flex;
-  justify-content: space-between;
-  font-size: 22px;
-  margin-bottom: 50px;
-} */
+  flex-direction: column;
+  justify-content: center;
+}
 .open-hours-title {
   font-size: 36px;
   text-align: center;
   margin-bottom: 50px;
 }
-/* .day-block {
-  text-align: center;
-} */
-/* .day {
-  margin-bottom: 20px;
-} */
-/* .time-block time {
-  display: block;
-  margin-bottom: 20px;
-} */
+
 .how-to-find-us-title {
   color: white;
   display: block;
@@ -104,13 +94,14 @@
 .button-apsolute {
   background-color: transparent;
   border: 2px solid white;
-  padding: 25px 0;
-  width: 100%;
+  padding: 25px 10px;
+  width: 90%;
   color: white;
   font-size: 32px;
   margin-top: 50px;
   border-radius: 20px;
   cursor: none;
+  margin: 50px auto 0;
 }
 .show-block {
   z-index: 2;
@@ -128,39 +119,39 @@
     flex: 0 0 48%;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 750px) {
+  .button-apsolute {
+    margin: 40px auto 0;
+  }
   .foto-models-wrapper {
     flex: 0 0 70%;
   }
+}
+@media (max-width: 600px) {
   .foto-models-container {
     padding: 0;
   }
   .foto-models-container {
     justify-content: center;
   }
+  .open-hours-title {
+    margin-bottom: 30px;
+  }
+  /* .button-apsolute {
+    margin: 20px auto 0;
+  } */
 }
 @media (max-width: 550px) {
   .open-hours-title {
     margin-bottom: 30px;
   }
-  .button-apsolute {
-    padding: 25px 5px;
-  }
-  /* .button-apsolute {
-    font-size: 28px;
-  } */
-  /* .text-block-container {
-    padding: 10px;
-  } */
-  /* .how-to-find-us-title {
-    font-size: 18px;
-  } */
+
   .button-apsolute {
     display: block;
     font-size: 20px;
     padding: 20px 0;
     width: 90%;
-    margin: 50px auto 0;
+    padding: 25px 5px;
   }
   .open-hours-title {
     margin-bottom: 28px;

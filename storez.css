@@ -143,6 +143,9 @@
   .open-hours-title {
     margin-bottom: 30px;
   }
+  .button-apsolute {
+    padding: 25px 5px;
+  }
   /* .button-apsolute {
     font-size: 28px;
   } */
@@ -156,7 +159,7 @@
     display: block;
     font-size: 20px;
     padding: 20px 0;
-    width: 100%;
+    width: 90%;
     margin: 50px auto 0;
   }
   .open-hours-title {

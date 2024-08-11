@@ -15,11 +15,12 @@
   flex-wrap: wrap;
   gap: 60px 1%;
   position: relative;
+  justify-content: center;
   z-index: 3;
   padding-left: 35px;
 }
 .foto-models-wrapper {
-  flex: 0 0 32%;
+  flex: 0 0 30%;
 }
 .foto-models-wrapper img {
   width: 100%;
@@ -64,7 +65,7 @@
   background-color: #9e4743;
   z-index: 1;
   border-radius: 10px;
-  padding: 50px 30px;
+  padding: 50px 0;
   color: white;
   opacity: 0;
   transition: all 0.5s ease;
@@ -72,27 +73,27 @@
   align-items: center;
   justify-content: center;
 }
-.day-time-block {
+/* .day-time-block {
   display: flex;
   justify-content: space-between;
   font-size: 22px;
   margin-bottom: 50px;
-}
+} */
 .open-hours-title {
   font-size: 36px;
   text-align: center;
   margin-bottom: 50px;
 }
-.day-block {
+/* .day-block {
   text-align: center;
-}
-.day {
+} */
+/* .day {
   margin-bottom: 20px;
-}
-.time-block time {
+} */
+/* .time-block time {
   display: block;
   margin-bottom: 20px;
-}
+} */
 .how-to-find-us-title {
   color: white;
   display: block;
@@ -107,6 +108,7 @@
   width: 100%;
   color: white;
   font-size: 32px;
+  margin-top: 50px;
   border-radius: 20px;
   cursor: none;
 }
@@ -121,9 +123,6 @@
 .show-opacity {
   opacity: 1;
 }
-.transform {
-  transform: rotate(45deg);
-}
 @media (max-width: 900px) {
   .foto-models-wrapper {
     flex: 0 0 48%;
@@ -131,7 +130,7 @@
 }
 @media (max-width: 600px) {
   .foto-models-wrapper {
-    flex: 0 0 75%;
+    flex: 0 0 70%;
   }
   .foto-models-container {
     padding: 0;
@@ -141,40 +140,30 @@
   }
 }
 @media (max-width: 550px) {
-  .open-hours-title,
-  .how-to-find-us-title,
-  .day-time-block {
+  .open-hours-title {
     margin-bottom: 30px;
   }
-  .button-apsolute {
+  /* .button-apsolute {
     font-size: 28px;
-  }
-  .text-block-container {
+  } */
+  /* .text-block-container {
     padding: 10px;
-  }
-  .how-to-find-us-title {
+  } */
+  /* .how-to-find-us-title {
     font-size: 18px;
-  }
+  } */
   .button-apsolute {
     display: block;
     font-size: 20px;
     padding: 20px 0;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 50px auto 0;
   }
-  .open-hours-title,
-  .how-to-find-us-title,
-  .day-time-block {
-    margin-bottom: 18px;
-    font-size: 20px;
+  .open-hours-title {
+    margin-bottom: 28px;
+    font-size: 24px;
   }
 
-  .day {
-    margin-bottom: 10px;
-  }
-  .time-block time {
-    margin-bottom: 10px;
-  }
   .how-to-find-us-title {
     font-size: 16px;
   }
